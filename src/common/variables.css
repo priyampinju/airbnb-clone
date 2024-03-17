@@ -1,0 +1,10 @@
+:root {
+  --bnbred: #ff385c;
+  --inline-padding: 40px;
+  --text-color: #717171;
+  --text-focus: #222222;
+  --border-color: #dddddd;
+  --header-border-radius: 30px;
+  --hover-bg: #ebebeb71;
+  --border-radius-header-input: 35px;
+}
