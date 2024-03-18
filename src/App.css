@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "./common/variables.css";
 
 * {
@@ -258,4 +262,70 @@
 /******************* Feed ********************/
 .feed {
   height: 150vh;
+}
+
+.explore-img {
+  color: var(--text-color);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: transparent;
+}
+.explore-img {
+  color: var(--bnbred);
+}
+.explore-name {
+  color: var(--text-color);
+}
+.explore-name:focus {
+  color: var(--text-focus);
+  font-weight: 600;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b0b0b0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #222222;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/*Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
